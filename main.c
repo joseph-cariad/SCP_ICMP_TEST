@@ -4,13 +4,13 @@
 
 int main()
 {
-    int button_status;
+    int button2_status;
     
-    printf("Enter the value of button status:\n");
-    scanf("%d", &button_status);
+    printf("Enter the value of button2 status:\n");
+    scanf("%d", &button2_status);
     
-    if(button_status == 1)
-        button_status++;
+    if(button2_status == 1)
+        
         TcpIp_IcmpTransmit ( 0,RemoteAddrPtr , 10 , 0x80 , 0x00 , 0 , NULL_PTR );
 
     return 0;
