@@ -12,10 +12,10 @@ int main()                                                 // Main function
 void ButtonHandler()
 {
     printf("Hello VW\n");
-    int button1_status;                                     //Variable for Button 1 status
-    int button2_status;                                     //Variable for Button 2 status
-    int noOfTimesButtonPressed;
-    int select;
+    uint8_t button1_status;                                     //Variable for Button 1 status
+    uint8_t button2_status;                                     //Variable for Button 2 status
+    uint8_t noOfTimesButtonPressed;
+    uint8_t select;
     button1_status = Dio_readchannel(11);                   // PJ11 as Button 1
     button2_status = Dio_readchannel(12);                   // PJ12 as Button 2
     if((!button1_status)==1)                                //Button 1 is pressed (ping target selection)
@@ -65,7 +65,7 @@ void ButtonHandler()
 
 }
 
-uint8_t Dio_readchannel(int channel)                //Reading the status of button (DIO driver)
+uint8_t Dio_readchannel(uint8_t channel)                //Reading the status of button (DIO driver)
 {
     
         return STD_LOW;
