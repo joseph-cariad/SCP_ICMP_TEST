@@ -3,12 +3,6 @@
 
 #include "button_handler.h"
 
-int main()                                                 // Main function
-{
-    ButtonHandler();
-
-}
-
 void ButtonHandler()
 {
     printf("Hello VW\n");
