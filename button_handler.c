@@ -1,7 +1,16 @@
 #include <stdio.h>
 #include <stdint.h>
 
+/* Header file*/
 #include "button_handler.h"
+
+/*
+Name: ButtonHandler
+Parameters: No input parameters
+Return type: void
+Description: Based on the button pressed:
+             BTN1: select's the target from ZeC, VCP, ADAS, ICP, Conmod, SCP.
+*/
 
 void ButtonHandler()
 {
