@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Tcpip_Api.h"
+#include "TcpIp_IcmpMsgHandler.h"
 
 int main()
 {
