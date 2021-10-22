@@ -1,7 +1,12 @@
 // this header file is to be replaced by the dio.h header file provided in autocore os
 
+#ifndef _DIO_SUDO_H_
+#define _DIO_SUDO_H_
+
+
 #include <stdio.h>
 #include <stdint.h>
+
 
 #define STD_LOW         0x00
 #define STD_HIGH        0x01
@@ -21,3 +26,4 @@ void Dio_WriteChannelGroup(Dio_ChannelGroupType led_number , uint8_t level)
     printf("LED %d %d %d is set to %d \n", 4,5,6, level);
 }
 
+#endif // _DIO_SUDO_H_

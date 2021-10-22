@@ -1,3 +1,7 @@
+#ifndef _LED_FLASH_HANDLER_H_
+#define _LED_FLASH_HANDLER_H_
+
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <dio_sudo.h>       // to be replaced by dio.h
@@ -63,5 +67,6 @@ void led_4_5_6_handler(uint8_t binary_code)
     Dio_WriteChannelGroup(led_number, binary_code);
 }
 
+#endif // _LED_FLASH_HANDLER_H_
 
 
