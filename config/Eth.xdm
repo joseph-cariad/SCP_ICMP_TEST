@@ -228,9 +228,7 @@
                   <a:a name="IMPORTER_INFO" value="@DEF"/>
                 </d:var>
                 <d:ctr name="VendorSpecific" type="IDENTIFIABLE">
-                  <d:var name="EthEthernetAdapter" type="INTEGER" value="1">
-                    <a:a name="IMPORTER_INFO" value="@DEF"/>
-                  </d:var>
+                  <d:var name="EthEthernetAdapter" type="INTEGER" value="1"/>
                 </d:ctr>
               </d:ctr>
               <d:ctr name="PublishedInformation" type="IDENTIFIABLE">

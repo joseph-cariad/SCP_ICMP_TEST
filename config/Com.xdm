@@ -60,9 +60,9 @@
                     <a:a name="IMPORTER_INFO" value="ImportEcuConfig"/>
                     <d:ctr name="PDPdu_CounterIn_256R" type="IDENTIFIABLE">
                       <a:a name="IMPORTER_INFO" value="ImportEcuConfig"/>
-                      <d:var name="ComIPduCallout" type="FUNCTION-NAME" >
-                        <a:a name="ENABLE" value="false"/>
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      <d:var name="ComIPduCallout" type="FUNCTION-NAME" 
+                             value="Com_IPdu_256R_Cbk_func">
+                        <a:a name="ENABLE" value="true"/>
                       </d:var>
                       <d:var name="ComIPduCancellationSupport" type="BOOLEAN" 
                              value="false">
@@ -367,9 +367,9 @@
                       <d:var name="ComInvalidNotification" type="FUNCTION-NAME" >
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
-                      <d:var name="ComNotification" type="FUNCTION-NAME" >
-                        <a:a name="ENABLE" value="FALSE"/>
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      <d:var name="ComNotification" type="FUNCTION-NAME" 
+                             value="Com_CbkRxAck_Rcv">
+                        <a:a name="ENABLE" value="true"/>
                       </d:var>
                       <d:var name="ComRxDataTimeoutAction" type="ENUMERATION" 
                              value="NONE">

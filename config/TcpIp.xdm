@@ -392,9 +392,7 @@
                     <d:lst name="TcpIpDhcpV6Config" type="MAP"/>
                     <d:ctr name="TcpIpIcmpV6Config" type="IDENTIFIABLE">
                       <d:var name="TcpIpIcmpV6EchoReplyEnabled" type="BOOLEAN" 
-                             value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="true"/>
                       <d:var name="TcpIpIcmpV6EchoReplyToMulticastEnabled" 
                              type="BOOLEAN" value="false">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
@@ -412,15 +410,11 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:ctr name="TcpIpIcmpV6MsgHandler" type="IDENTIFIABLE">
-                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="ENABLE" value="true"/>
                         <d:var name="TcpIpIcmpV6MsgHandlerHeaderFileName" 
-                               type="STRING" >
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
-                        </d:var>
+                               type="STRING" value="Test_SCP.h"/>
                         <d:var name="TcpIpIcmpV6MsgHandlerName" 
-                               type="FUNCTION-NAME" >
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
-                        </d:var>
+                               type="FUNCTION-NAME" value="TcpIp_IcmpMsgHandler"/>
                       </d:ctr>
                       <d:var name="TcpIpIcmpV6EchoReplyAvoidFragmentation" 
                              type="BOOLEAN" value="false">
