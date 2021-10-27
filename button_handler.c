@@ -10,6 +10,7 @@ Parameters: No input parameters
 Return type: void
 Description: Based on the button pressed:
              BTN1: select's the target from ZeC, VCP, ADAS, ICP, Conmod, SCP.
+             BTN2: Call the ping handler so that it will start the ping with the selected target.
 */
 
 void ButtonHandler()
